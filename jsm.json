@@ -1,101 +1,91 @@
 {
-	"spider":"./pg.jar",
-	"sites":[
-		{
-			"key":"Youtube",
-			"name":"Youtube",
-			"type":3,
-			"api": "csp_Youtube",
-			"searchable": 1,
-			"quickSearch": 0,
-			"changeable": 0,
-			"timeout": 120,
-			"ext":{
-				"token":"./lib/tokenm.json",
-				"json":"./lib/youtube.json",
-				"type":"直播#新闻#剧集#电影#综艺#纪录片#音乐#体育#动物#风光#放松#4K#HDR#movie#music#documentary#bbc documentary#national geographic documentary",
-				"keywords":"排行榜,HOT,TRENDS,热门话题,热门趋势,热门综艺,热门电影,热门电视剧,小姐姐",
-				"codecs":"",
-				"proxy":"proxy",
-				"danmu":true
-			},
-			"style": {
-				"type": "rect",
-				"ratio": 1.77
+	“蜘蛛”：“./pg.jar”，"spider"“./pg.jar”，
+	“站点”：[    "sites" : [
+		{     {
+			“key”：“Youtube”，"key" : "Youtube" ,
+			“名称”：“Youtube”，"name" : "Youtube" ,
+			“类型”：3，“类型”：3 ,
+			“api”：“csp_Youtube”，"api" : "csp_Youtube" ,
+			“可搜索”：1，“可搜索” : 1 ,
+			“快速搜索”：0，“快速搜索” : 0 ,
+			“可改变”：0，“可改变” : 0 ,
+			“超时”：120，“超时” : 120 ,
+			“分机”：{      “分机”：{
+				“令牌”：“。/lib/tokenm.json”，“令牌”：“。/lib/tokenm.json”，
+				“json”：“./lib/youtube.json”，"json" : "./lib/youtube.json" ,
+				"type" : "直播#新闻#热烈#电影#综艺#纪录片#音乐#体育#动物#风光#放松#4K#HDR#movie#music#documentary#bbc 纪录片#国家地理纪录片" , "type" : "直播#新闻##电影#综艺#纪录片#音乐#体育#动物#资金# 4 K#HDR#电影#音乐#纪录片#bbc纪录片#国家地理纪录片》，
+				"keywords" : "排行榜、热门、趋势、热门话题、热门趋势、热门综艺、热门电影、热门电视剧、小姐姐" , "keywords" : "排行榜、热门、趋势、热门话题、热门趋势、热门综艺,热门电影,热门电视剧,小姐姐" ,
+				"编解码器" : "" , "编解码器" : "" ,
+				“代理”：“代理”，“代理” : “代理” ,
+				“弹幕”：正确“弹幕”：正确
+			}，}，
+			“风格”：{        “风格”：{
+				“类型”：“矩形”，"type" : "rect" ,
+				“比例”：1.77 “比例”：1.77
+			}          }
+		}，}，
+		{           {
+			"key" : "豆瓣" , "key" : "豆瓣" ,
+			"名称" : "豆瓣" , "名称" : "豆瓣" ,
+			“类型”：3，“类型”：3 ,
+			"api" : "csp_豆瓣" , "api" : "csp_豆瓣" ,
+			“可搜索”：0，“可搜索” : 0 ,
+			“可变”：1，“可变” : 1 ,
+			“指数”：1，“指数” : 1 ,
+			"ext" : "./lib/douban.json"           "ext" : "./lib/douban.json"
+		}，}，
+		{            {
+			"key" : "网盘配置" , "key" : "网盘配置" ,
+			"name" : "网盘及弹幕配置" , "name" : "网盘及弹幕配置" ,
+			“类型”：3，“类型”：3 ,
+			“api”：“csp_Config”，"api" : "csp_Config" ,
+			“可搜索”：0，“可搜索” : 0 ,
+			“可改变”：0，“可改变” : 0 ,
+			/lib/tokenm.json”，“扩展名”：“。/lib/tokenm.json”，
+			“风格”：{             "style" : {
+				“类型”：“矩形”，"type" : "rect" ,
+				“ 比例”： 1.5 “ 比例” : 1.5
+			}             }
+		}，}，
+		{             "key" : "Local" , "name" : "本地" , "type" : 3 , "api" : "csp_Local"             } , {            "key" : "Local" , "name" : "本地" , "类型”：3，“api”：“csp_Local” }，
+		{           "key" : "PushShare" , "name" : "我的资源分享" , "type" : 3 , "api" : "csp_PushShare" , "可搜索" : 1 , "quickSearch" : 1 , "可更改" : 1、“可过滤”：0、“超时”：60、“ext”：“./lib/tokenm.json$$$./lib/pushshare.txt$$$db$$$ 1 ”、{ “ key”："PushShare" , "name" : "我的资源分享" , "type" : 3 , "api" : "csp_PushShare" , "可搜索" : 1 , "quickSearch" : 1 , "可更改" : 1、“可过滤”：0、“超时”：60,“扩展”：“./lib/tokenm.json$$$./lib/pushshare.txt$$$db$$$ 1 ”，
+			“风格”：{           "style" : {
+				“类型”：“列表”，"type" : "列表" ,
+				“比例”：1.1 “ 比例” : 1.1
+			}        }
+		}，}，
+		{       "key" : "AliShare" , "name" : "阿里云盘影视分享" , "type" : 3 , "api" : "csp_AliShare" , "searchable" : 1 , "quickSearch" : 1 , "可更改"：1，“可过滤”：0，“超时”：60，“ext”：“./lib/tokenm.json$$$./lib/alishare.txt$$$db$$$ 1 ”，{ "key": "AliShare" , "name" : "阿里云盘影视分享" , "type" : 3 , "api" : "csp_AliShare" , "可搜索" : 1 , "quickSearch" : 1 , "可更改" : 1、“可过滤”：0、“超时”：60、“扩展”：“./lib/tokenm.json$$$./lib/alishare.txt$$$db$$$ 1 ” ,
+			“风格”：{      "style" : {
+				“类型”：“列表”，"type" : "列表" ,
+				“比例”：1.1 “ 比例” : 1.1
+			}   }
+		}，}，
+		{   "key" : "AliShareEBook" , "name" : "阿里云盘书籍分享" , "type" : 3 , "api" : "csp_AliShare" , "searchable" : 0 , "quickSearch" : 0 , "可更改"：0，“可过滤”：0，“超时”：60，“ext”：“./lib/tokenm.json$$$./lib/alishare.ebook.txt$$$db$$$ 1 ” ，{   "key" : "AliShareEBook" , "name" : "阿里云盘书籍分享" , "type" : 3 , "api" : "csp_AliShare" , "可搜索" : 0 , "quickSearch" : 0 , "可更改“：0，“可过滤”：0，“超时”：60/lib/tokenm.json$$$。/lib/alishare.ebook.txt$$$db$$$ 1 ”，
+			“风格”：{
+				“类型”：“列表”，
+				“比率”：1.1
 			}
-		},
-		{
-			"key": "豆瓣",
-			"name": "豆瓣",
-			"type": 3,
-			"api": "csp_Douban",
-			"searchable": 0,
-			"changeable": 1,
-			"indexs":1,
-			"ext": "./lib/douban.json"
-		},
-		{
-			"key": "网盘配置",
-			"name": "网盘及彈幕配置",
-			"type": 3,
-			"api": "csp_Config",
-			"searchable": 0,
-			"changeable": 0,
-			"ext":"./lib/tokenm.json",
-			"style": {
-				"type": "rect",
-				"ratio": 1.5
+		}，
+		{  "key" : "QuarkShare" , "name" : "夸克云盘分享" , "type" : 3 , "api" : "csp_QuarkShare" , "可搜索" : 1 , "quickSearch" : 0 , "可更改" : 0，“可过滤”：0，“超时”：60，“ext”：“./lib/tokenm.json$$$./lib/quarkshare.txt”，
+			“风格”：{
+				“类型”：“列表”，
+				“比率”：1.1
 			}
-		},
-		{"key":"Local","name":"本地","type":3,"api":"csp_Local"},
-		{"key":"PushShare","name":"我的资源分享","type":3, "api":"csp_PushShare","searchable":1,"quickSearch":1, "changeable":1, "filterable":0, "timeout":60, "ext":"./lib/tokenm.json$$$./lib/pushshare.txt$$$db$$$1",
-			"style": {
-				"type": "list",
-				"ratio": 1.1
+		}，
+		{  "key" : "115Share" , "name" : "115云盘分享" , "type" : 3 , "api" : "csp_P115Share" , "searchable" : 1 , "quickSearch" : 0 , "changeable" : 0 , "filterable" : 0 , "timeout" : 60 , "ext" : "./lib/tokenm.json$$$./lib/115share.txt$$$db$$$1" ,
+			“风格”：{
+				“类型”：“列表”，
+				“比率”：1.1
 			}
-		},
-		{"key":"AliShare","name":"阿里云盘影视分享","type":3,"api":"csp_AliShare","searchable":1,"quickSearch":1, "changeable":1, "filterable":0, "timeout":60, "ext":"./lib/tokenm.json$$$./lib/alishare.txt$$$db$$$1",
-			"style": {
-				"type": "list",
-				"ratio": 1.1
+		}，
+		{ "key" : "UCShare" , "name" : "UC云盘分享" , "type" : 3 , "api" : "csp_UCShare" , "searchable" : 1 , "quickSearch" : 0 , "changeable" : 0 , "filterable" : 0 , "timeout" : 60 , "ext" : "./lib/tokenm.json$$$./lib/ucshare.txt$$$db$$$1" ,
+			“风格”：{
+				“类型”：“列表”，
+				“比率”：1.1
 			}
-		},
-		{"key":"AliShareEBook","name":"阿里云盘书籍分享","type":3,"api":"csp_AliShare","searchable":0,"quickSearch":0, "changeable":0, "filterable":0, "timeout":60, "ext":"./lib/tokenm.json$$$./lib/alishare.ebook.txt$$$db$$$1",
-			"style": {
-				"type": "list",
-				"ratio": 1.1
-			}
-		},
-		{"key":"QuarkShare","name":"夸克云盘分享","type":3,"api":"csp_QuarkShare","searchable":1,"quickSearch":0, "changeable":0, "filterable":0, "timeout":60, "ext":"./lib/tokenm.json$$$./lib/quarkshare.txt",
-			"style": {
-				"type": "list",
-				"ratio": 1.1
-			}
-		},
-		{"key":"115Share","name":"115云盘分享","type":3,"api":"csp_P115Share","searchable":1,"quickSearch":0, "changeable":0, "filterable":0, "timeout":60, "ext":"./lib/tokenm.json$$$./lib/115share.txt$$$db$$$1",
-			"style": {
-				"type": "list",
-				"ratio": 1.1
-			}
-		},
-		{"key":"UCShare","name":"UC云盘分享","type":3,"api":"csp_UCShare","searchable":1,"quickSearch":0, "changeable":0, "filterable":0, "timeout":60, "ext":"./lib/tokenm.json$$$./lib/ucshare.txt$$$db$$$1",
-			"style": {
-				"type": "list",
-				"ratio": 1.1
-			}
-		},
-		{"key":"ThunderShare","name":"迅雷云盘分享","type":3,"api":"csp_ThunderShare","searchable":1,"quickSearch":0, "changeable":0, "filterable":0, "timeout":60, "ext":"./lib/tokenm.json$$$./lib/thundershare.txt",
-			"style": {
-				"type": "list",
-				"ratio": 1.1
-			}
-		},
-		{"key":"PikPakShare","name":"PikPak分享","type":3,"api":"csp_PikPakShare","searchable":1,"quickSearch":1, "changeable":1, "filterable":0, "timeout":60, "ext":"./lib/tokenm.json$$$./lib/pikpakclass.json$$$./lib/pikpakclass.json.txt.gz",
-			"style": {
-				"type": "list",
-				"ratio": 1.1
-			}
-		},
+		}，
+		
+		
 		{"key":"SambaShare","name":"Samba分享","type":3,"api":"csp_SambaShare","searchable":0,"quickSearch":0, "changeable":0, "filterable":0, "timeout":60, "ext":"./lib/tokenm.json$$$./lib/sambashare.txt"},
 		{
 			"key": "直播转点播",
@@ -105,73 +95,17 @@
 			"api": "./lib/live2vod.js",
 			"ext": "./lib/feimaolive.json"
 		},
-		{
-			"key": "FirstAid",
-			"name": "🚑 急救知识 ",
-			"type": 3,
-			"api": "csp_FirstAid",
-			"searchable": 0,
-			"quickSearch": 0,
-			"changeable": 0,
-			"style": {
-				"type": "rect",
-				"ratio": 3.8
-			}
-		},
 		{"key":"drpy_js_磁力熊","name":"磁力熊[js]|索引","type":3,"api":"./lib/drpy2.min.js","ext":"./js/cilixiongp.js","playerType":"1", "searchable":0, "quickSearch":0, "changeable":1,
 			"indexs":1
 		},
-		{
-			"key":"bili",
-			"name":"B站 | Bili[jar]",
-			"type":3,
-			"api": "csp_Bili",
-			"searchable": 1,
-			"quickSearch": 0,
-			"changeable": 0,
-			"ext":{
-				"type":"演唱会#电影#电视剧#帕梅拉#广场舞#纪录片#综艺#鬼畜#音乐#舞蹈#影视#知识#美食#风光#田园#户外#8K#徐云",
-				"cookie":""
-			}
-		},
-		{"key":"美剧迷","name":"美剧迷|网盘","type":3,"api":"csp_Meijumi", "quickSearch":1, "changeable":1, "filterable":1, "timeout":120,"ext":"./lib/tokenm.json$$$https://www.meijumi.net/$$$proxy$$$1"},
-		{"key":"Libvio","name":"LIBVIO|网盘","type":3,"api":"csp_Libvio","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://www.libvio.fun/$$$null"},
-		{"key":"Bt0","name":"不太灵|磁力","type":3,"api":"csp_Bt0","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$null$$$noproxy$$$1"},
-		{"key":"Xpanpan","name":"小盘盘|网盘","type":3,"api":"csp_Xpanpan","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://xpanpan.site$$$noproxy$$$1",
-			"style": {
-				"type": "list",
-				"ratio": 1.1
-			}
-		},
 		{"key":"Wogg","name":"玩偶哥哥|网盘","type":3,"api":"csp_Wogg","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://wogg.888484.xyz/$$$noproxy$$$1$$$./lib/wogg.json"},
-		{"key":"Wo4k","name":"玩偶4K|磁力","type":3,"api":"csp_Wo4k","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://www.wo4k.com/$$$proxy$$$1$$$./lib/wogg.json"},
-		{"key":"Wobg","name":"玩偶表哥|网盘","type":3,"api":"csp_Wobg","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://wobge.run.goorm.io$$$proxy$$$1$$$./lib/wogg.json"},
-		{"key":"yydsys","name":"玩你老哥|网盘","type":3,"api":"csp_Wobg","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://tv.yydsys.top/$$$proxy$$$1$$$./lib/wogg.json"},
-		{"key":"蜡笔网盘","name":"蜡笔|网盘","type":3,"api":"csp_Wobg","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://duopan.fun/$$$noproxy$$$1$$$./lib/wogg.json"},
-		{"key":"Gaoqing","name":"中国高清网|网盘","type":3,"api":"csp_Gaoqing","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://gaoqing.la/$$$proxy$$$1"},
-		{"key":"Yinfans","name":"音范丝|磁力","type":3,"api":"csp_Gaoqing","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://www.yinfans.me/$$$proxy$$$1"},
-		{"key":"ddys","name":"低端影视|网盘","type":3,"api":"csp_Ddys","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://ddys.pro/$$$proxy$$$1$$$"},
-		{"key":"Xinshijue","name":"新视觉|网盘","type":3,"api":"csp_Xinshijue","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://6080z.com/$$$noproxy$$$1$$$./lib/wogg.json"},
-		{"key":"团长资源","name":"团长资源|网盘","type":3,"api":"csp_TZFile", "quickSearch":1, "changeable":1, "filterable":1, "timeout":60,"ext":"./lib/tokenm.json$$$noproxy$$$1"},
-		{"key":"欧乐影院","name":"欧乐影院|海外","type":3,"api":"csp_Olevod", "quickSearch":1, "changeable":1, "filterable":1, "timeout":60,"ext":"./lib/tokenm.json$$$null$$$proxy$$$1"},
-		{"key":"Moli","name":"HDmoli|网盘","type":3,"api":"csp_Moli","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://www.hdmoli.pro/$$$proxy$$$1$$$./lib/moli.json"},
-		{"key":"Hdhive","name":"影巢|网盘","type":3,"api":"csp_Hdhive","quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$noproxy$$$1"},
-		{"key":"Ppxzy","name":"皮皮虾|网盘","type":3,"api":"csp_Ppxzy", "quickSearch":1, "changeable":1, "filterable":1, "timeout":60, "ext":"./lib/tokenm.json$$$https://ppxzy.ink$$$proxy$$$1"},
-		{"key":"校长影视","name":"校长影视|网盘","type":3,"api":"csp_XiaoZhang", "quickSearch":1, "changeable":1, "filterable":1, "timeout":60,"ext":"./lib/tokenm.json$$$https://xzyshd.com$$$proxy$$$1"},
-		{
-			"key": "Bdys_spider",
-			"name": "哔滴┃磁力",
-			"api": "csp_Bdys01",
-			"type": 3,
-			"filterable": 1,
-			"searchable":1,
-			"quickSearch": 1,
-			"searchable": 1,
-			"timeout":60,
-			"ext": "./lib/tokenm.json$$$https://www.yjys01.com/$$$proxy$$$1"
-		},
-		{"key":"YunPan","name":"云盘资源|网盘","type":3,"api":"csp_YunPan","timeout":60, "ext":"./lib/tokenm.json$$$null$$$proxy$$$1"},
-		{"key":"YingSo","name":"影搜|网盘搜索","type":3,"api":"csp_YingSo","timeout":60, "ext":"./lib/tokenm.json"},
+		{ "key" : "Wo4k" , "name" : "玩偶4K|磁力" , "type" : 3 , "api" : "csp_Wo4k" , "quickSearch" : 1 , "changeable" : 1 , "filterable" : 1、“超时”：60、“分机”：“./lib/tokenm.json$$$https://www.wo4k.com/$$$proxy$$$1$$$./lib/wogg.json ” } ,
+		{ "key" : "Wobg" , "name" : "玩偶表哥|网盘" , "type" : 3 , "api" : "csp_Wobg" , "quickSearch" : 1 , "changeable" : 1 , "filterable ”：1，“超时”：60，“ext”：“./lib/tokenm.json$$$https://wobge.run.goorm.io$$$proxy$$$1$$$./lib/ wogg.json" } ,
+		{ "key" : "yydsys" , "name" : "玩你老哥|网盘" , "type" : 3 , "api" : "csp_Wobg" , "quickSearch" : 1 , "changeable" : 1 , "可过滤”：1，“超时”：60，“ext”：“./lib/tokenm.json$$$https://tv.yydsys.top/$$$proxy$$$1$$$./lib/ wogg.json" } ,
+		{ "key" : "蜡笔网盘" , "name" : "蜡笔|网盘" , "type" : 3 , "api" : "csp_Wobg" , "quickSearch" : 1 , "changeable" : 1 , "filterable ”：1，“超时”：60，“ext”：“./lib/tokenm.json$$$https://duopan.fun/$$$noproxy$$$1$$$./lib/wogg.json ” } ,
+		{ "key" : "高青" , "名称" : "中国高清网|网盘" , "类型" : 3 , "api" : "csp_高青" , "quickSearch" : 1 , "可更改" : 1 , "可过滤" : 1 , "超时" : 60 , "ext" : "./lib/tokenm.json$$$https://gaoqing.la/$$$proxy$$$1" } ,		 {
+		{ "key" : "云盘" , "name" : "云盘资源|网盘" , "type" : 3 , "api" : "csp_YunPan" , "timeout" : 60 , "ext" : "./lib /tokenm.json$$$null$$$代理$$$1" } ,
+		{ "key" : "影搜" , "name" : "影搜|网盘搜索" , "type" : 3 , "api" : "csp_YingSo" , "timeout" : 60 , "ext" : "./lib /tokenm.json" } ,
 		{"key":"混合盘","name":"混合盘|网盘搜索","type":3,"api":"csp_HunHePan","timeout":60, "ext":"./lib/tokenm.json",
 			"style": {
 				"type": "list",
@@ -192,8 +126,8 @@
 				"ratio": 1.1
 			}
 		},
-		{"key":"秒搜","name":"秒搜|网盘搜索","type":3,"api":"csp_MiaoSou","timeout":60, "ext":"./lib/tokenm.json",
-			"style": {
+		{ "key" : "秒搜" , "name" : "秒搜|网盘搜索" , "type" : 3 , "api" : "csp_MiaoSou" , "timeout" : 60 , "ext" : "./ lib/tokenm.json" ,
+			“风格”：{
 				"type": "list",
 				"ratio": 1.1
 			}
